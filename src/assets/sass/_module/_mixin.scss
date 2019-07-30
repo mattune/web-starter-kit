@@ -1,0 +1,42 @@
+@import "config.scss";
+
+
+// -----------------------------------------------------------------
+// どのサイトでもだいたい使うようなmixin
+// -----------------------------------------------------------------
+// easing簡易入力
+@mixin easing($duration:0.2s, $easing:ease, $property:all, $delay:0s) {
+  transition-duration: $duration;
+  transition-timing-function: $easing;
+  transition-property: $property;
+  transition-delay: $delay;
+}
+
+
+// メディアクエリ簡易入力
+@mixin pc {
+  @media screen and (min-width: $TB) {
+    @content;
+  }
+}
+@mixin tb {
+  @media screen and (min-width: $SP) and (max-width: $TB) {
+    @content;
+  }
+}
+@mixin sp {
+  @media screen and (max-width: $SP) {
+    @content;
+  }
+}
+
+
+
+
+// -----------------------------------------------------------------
+// サイト固有のmixin
+// -----------------------------------------------------------------
+// フォント指定
+@mixin noto {
+  font-family: 'Noto Sans JP', sans-serif;
+}

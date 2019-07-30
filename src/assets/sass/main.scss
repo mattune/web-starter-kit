@@ -1,0 +1,42 @@
+// -----------------------------------------------------------------
+// module import
+// -----------------------------------------------------------------
+@import "_module/config";
+@import "_module/function";
+@import "_module/mixin";
+@import "_module/keyframe";
+@import "_module/reset";
+@import "_module/parts";
+
+
+
+// -----------------------------------------------------------------
+// library import
+// -----------------------------------------------------------------
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap&subset=japanese');
+
+
+
+// -----------------------------------------------------------------
+// site css import
+// -----------------------------------------------------------------
+// 共通
+@import "_styleCommon/_base.scss";
+
+
+// PC
+@include pc {
+  @import "_stylePC/_base.scss";
+}
+
+
+// タブレット
+@include tb {
+  @import "_styleTB/_base.scss";
+}
+
+
+// スマホ
+@include sp {
+  @import "_styleSP/_base.scss";
+}

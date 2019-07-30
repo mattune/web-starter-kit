@@ -103,7 +103,7 @@ config.webpack = {
 				fileName: "[name].js",
 				filesToConcat: [
 					// npm
-					// "./node_modules/jquery/dist/jquery.min.js",
+					"./node_modules/jquery/dist/jquery.min.js",
 					// "./node_modules/velocity-animate/velocity.min.js",
 					// libs
 					`${config.src}assets/js/libs/core/**/*.js`,

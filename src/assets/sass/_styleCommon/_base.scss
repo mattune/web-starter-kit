@@ -1,0 +1,39 @@
+
+// -----------------------------------------------------------------
+// Common setting
+// -----------------------------------------------------------------
+html,body {
+  height:100%;
+}
+
+body {
+  @include noto;
+
+  &.noscroll {
+    overflow: hidden;
+  }
+}
+
+.target {
+  @include easing;
+  transform: translateY(40px);
+  opacity: 0;
+
+  &.action {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pc {display: none;}
+.tb {display: none;}
+.sp {display: none;}
+
+
+
+// -----------------------------------------------------------------
+// Base layout
+// -----------------------------------------------------------------
+#wrapper {
+
+} // wrapper
