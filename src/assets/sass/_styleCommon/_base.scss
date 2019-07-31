@@ -7,8 +7,6 @@ html,body {
 }
 
 body {
-  @include noto;
-
   &.noscroll {
     overflow: hidden;
   }

@@ -15,12 +15,12 @@
 
 // メディアクエリ簡易入力
 @mixin pc {
-  @media screen and (min-width: $TB) {
+  @media screen and (min-width: $TB + 1) {
     @content;
   }
 }
 @mixin tb {
-  @media screen and (min-width: $SP) and (max-width: $TB) {
+  @media screen and (min-width: $SP + 1) and (max-width: $TB) {
     @content;
   }
 }
@@ -37,6 +37,6 @@
 // サイト固有のmixin
 // -----------------------------------------------------------------
 // フォント指定
-@mixin noto {
-  font-family: 'Noto Sans JP', sans-serif;
-}
+// @mixin noto {
+//   font-family: 'Noto Sans JP', sans-serif;
+// }

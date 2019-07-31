@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap&subset=japanese");
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -687,10 +686,6 @@ html, body {
   height: 100%;
 }
 
-body {
-  font-family: 'Noto Sans JP', sans-serif;
-}
-
 body.noscroll {
   overflow: hidden;
 }
@@ -727,7 +722,7 @@ body.noscroll {
   display: none;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   body {
     background-color: red;
   }
@@ -736,7 +731,7 @@ body.noscroll {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1024px) {
+@media screen and (min-width: 481px) and (max-width: 1024px) {
   body {
     background-color: yellow;
   }
